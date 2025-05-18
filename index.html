@@ -8,21 +8,119 @@
 </head>
 <body>
     <h1>SPORT CLUB</h1> <!--Jefferson Durango-->
-    <img src="imagen1.png" alt=""> 
+    <div style="text-align: center;"> 
+    <img src="/IMG/th.jpeg" alt="SPORT CLUB">
+    </div>
     <nav>
     <ul>
       <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#Catalogos">Servicios</a></li>
+      <li><a href="#Catalogo">catalogo</a></li>
       <li><a href="#Otros">Nosotros</a></li>
       <li><a href="#contactos">Contacto</a></li>
     </ul>
   </nav>
 
-  <section id="inicio"><h1>Bienvenido a nuestra página</h1> <!--Nairovis Garcia-->
-  Bienvenidos sean a nuestra pagina web SPORT CLUB, aqui encontras mucha variedad de prendas para realizar deportes.</section>
-  
+  <section id="inicio"><h1>Bienvenido a nuestra página</h1></section> <!--Nairovis Garcia-->
   <section id="Catalogo"><h2>Catalogo</h2></section> <!--Leider Herrera-->
+
+
+  <div class="catalogo">
+    <div class="producto">
+      <h3>Camisa Casual</h3>
+      <img src="/IMG/camisa.jpeg" alt="camisa Casual">
+      <p>PRECIO = $25.00</p>
+    </div>
+    <div class="producto">
+      <h3>Pantalón Jeans</h3>
+      <img src="/IMG/pantalon.jpeg" alt="Pantalón deportivo">
+      <p>PRECIO =$35.00</p>
+    </div>
+  
+    <div class="producto">
+      <h3>Zapatos deportivos</h3>
+       <img src="/IMG/zapatos.jpeg" alt="zapatos deportivos">
+      <p> PRECIO = $60.00</p>
+      
+    </div>
+    
+  </div>
+
   <section id="Otros"><h2>Sobre Nosotros</h2></section> <!--Willintong Mena-->
-  <section id="contactos"><h2>Contacto</h2></section> <!--Leider Herrera-->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .formulario-contacto {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <section id="contactos"><h2>Contactanos</h2></section> <!--Leider Herrera-->
+
+  <form class="formulario-contacto" action="enviar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
